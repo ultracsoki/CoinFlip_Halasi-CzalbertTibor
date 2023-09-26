@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
                 tipp = 0;
                 Random random = new Random();
                 randomNumber = random.nextInt(2);
+                //Animáció
                 if (randomNumber == tipp)
                 {
                     imageViewCoin.setImageResource(R.drawable.heads);
@@ -61,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 dobasokSzama++;
                 textViewDobasok.setText("Dobások: " + dobasokSzama);
-                if (dobasSzamlalo == 5)
+                if (dobasSzamlalo == 5 || gyozelemSzama == 3 || veresegSzama == 3)
                 {
                     if (gyozelemSzama > veresegSzama)
                     {
@@ -82,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
                 tipp = 1;
                 Random random = new Random();
                 randomNumber = random.nextInt(2);
+                //Animáció
                 if (randomNumber == tipp)
                 {
                     imageViewCoin.setImageResource(R.drawable.tails);
@@ -98,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 dobasokSzama++;
                 textViewDobasok.setText("Dobások: " + dobasokSzama);
-                if (dobasSzamlalo == 5)
+                if (dobasSzamlalo == 5 || gyozelemSzama == 3 || veresegSzama == 3)
                 {
                     if (gyozelemSzama > veresegSzama)
                     {
